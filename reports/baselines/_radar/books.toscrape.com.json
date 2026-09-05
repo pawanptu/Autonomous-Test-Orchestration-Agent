@@ -1,0 +1,695 @@
+{
+  "version": 1,
+  "target": "https://books.toscrape.com/",
+  "updated_at": "2026-09-05T10:58:21.969299+00:00",
+  "runs": [
+    {
+      "run_id": "run_2819d9226017",
+      "ts": "2026-09-05T01:27:47.571999+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_b20117660713",
+      "ts": "2026-09-05T05:17:10.630743+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_e73aa8b838e0",
+      "ts": "2026-09-05T07:19:37.712865+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F003": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F004": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F005": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "low",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 5,
+          "passed": 5,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 2,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_29a2ed5435c8",
+      "ts": "2026-09-05T07:28:32.225534+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open Home and confirm it renders",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F002": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F003": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "low",
+            "status": "failed"
+          }
+        },
+        "counts": {
+          "flows": 3,
+          "passed": 0,
+          "failed": 3,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 2,
+          "low_risk": 1
+        }
+      }
+    },
+    {
+      "run_id": "run_beb99a16735c",
+      "ts": "2026-09-05T07:30:27.278240+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open Home and confirm it renders",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F002": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F003": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "low",
+            "status": "failed"
+          }
+        },
+        "counts": {
+          "flows": 3,
+          "passed": 0,
+          "failed": 3,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 2,
+          "low_risk": 1
+        }
+      }
+    },
+    {
+      "run_id": "run_a9c0fe53ad5c",
+      "ts": "2026-09-05T07:43:03.007570+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open Home and confirm it renders",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F002": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F003": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "low",
+            "status": "failed"
+          }
+        },
+        "counts": {
+          "flows": 3,
+          "passed": 0,
+          "failed": 3,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 2,
+          "low_risk": 1
+        }
+      }
+    },
+    {
+      "run_id": "run_a19abeff14f5",
+      "ts": "2026-09-05T09:02:36.840006+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_d0ddce5f4ef7",
+      "ts": "2026-09-05T09:04:20.896037+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F003": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F004": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F005": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "low",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 5,
+          "passed": 5,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 2,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_23e0a0c90260",
+      "ts": "2026-09-05T09:09:26.209620+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_b786c2ab8c62",
+      "ts": "2026-09-05T10:30:32.335981+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "not_run"
+          },
+          "F002": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "not_run"
+          },
+          "F003": {
+            "name": "Open Travel | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "not_run"
+          }
+        },
+        "counts": {
+          "flows": 3,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 3,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_97eb84df31a9",
+      "ts": "2026-09-05T10:31:48.029085+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F003": {
+            "name": "Open Travel | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 3,
+          "passed": 3,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_af408849bccc",
+      "ts": "2026-09-05T10:33:09.089889+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "failed"
+          },
+          "F003": {
+            "name": "Open Travel | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 3,
+          "passed": 2,
+          "failed": 1,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_8f022b1900b0",
+      "ts": "2026-09-05T10:37:16.054833+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F003": {
+            "name": "Open Travel | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 3,
+          "passed": 3,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_f32f4ac978c6",
+      "ts": "2026-09-05T10:39:46.720052+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F003": {
+            "name": "Open Travel | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F004": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F005": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "low",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 5,
+          "passed": 5,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 2,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_7cb67e8cd5f2",
+      "ts": "2026-09-05T10:42:07.413080+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F003": {
+            "name": "Open Travel | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F004": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F005": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "low",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 5,
+          "passed": 5,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 2,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_0aa8f6fae9c7",
+      "ts": "2026-09-05T10:44:20.380995+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open All products | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open Books | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "low",
+            "status": "passed"
+          },
+          "F003": {
+            "name": "Open Travel | Books to Scrape - Sandbox and confirm it renders",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F004": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F005": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "low",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 5,
+          "passed": 5,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 2,
+          "low_risk": 3
+        }
+      }
+    },
+    {
+      "run_id": "run_3a573ea55f42",
+      "ts": "2026-09-05T10:49:46.729365+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_6dd26095d1a2",
+      "ts": "2026-09-05T10:52:21.459447+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_fd37ed318a1d",
+      "ts": "2026-09-05T10:54:43.940865+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_76c1ba22264d",
+      "ts": "2026-09-05T10:58:21.969299+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    }
+  ]
+}

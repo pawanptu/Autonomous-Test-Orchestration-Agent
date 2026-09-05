@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "target": "http://127.0.0.1:8792/",
+  "updated_at": "2026-09-04T22:35:26.584492+00:00",
+  "runs": [
+    {
+      "run_id": "run_credrun_***REDACTED***",
+      "ts": "2026-09-04T22:35:13.922090+00:00",
+      "target": "http://127.0.0.1:8792/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open Shop Home and confirm it renders",
+            "category": "happy_path",
+            "risk": "high",
+            "status": "passed"
+          },
+          "F002": {
+            "name": "Open Login and confirm it renders",
+            "category": "happy_path",
+            "risk": "high",
+            "status": "passed"
+          },
+          "F003": {
+            "name": "Open Cart and confirm it renders",
+            "category": "happy_path",
+            "risk": "high",
+            "status": "passed"
+          },
+          "F004": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F005": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "high",
+            "status": "passed"
+          },
+          "F006": {
+            "name": "Reject invalid credentials",
+            "category": "error_state",
+            "risk": "high",
+            "status": "passed"
+          }
+        },
+        "counts": {
+          "flows": 6,
+          "passed": 6,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 5,
+          "medium_risk": 1,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_credrun_***REDACTED***",
+      "ts": "2026-09-04T22:35:26.584492+00:00",
+      "target": "http://127.0.0.1:8792/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Open Shop Home and confirm it renders",
+            "category": "happy_path",
+            "risk": "high",
+            "status": "not_run"
+          },
+          "F002": {
+            "name": "Open Login and confirm it renders",
+            "category": "happy_path",
+            "risk": "high",
+            "status": "not_run"
+          },
+          "F003": {
+            "name": "Open Cart and confirm it renders",
+            "category": "happy_path",
+            "risk": "high",
+            "status": "not_run"
+          },
+          "F004": {
+            "name": "Submit an empty search query",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "not_run"
+          },
+          "F005": {
+            "name": "Request a URL that does not exist",
+            "category": "error_state",
+            "risk": "high",
+            "status": "not_run"
+          },
+          "F006": {
+            "name": "Reject invalid credentials",
+            "category": "error_state",
+            "risk": "high",
+            "status": "not_run"
+          }
+        },
+        "counts": {
+          "flows": 6,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 6,
+          "high_risk": 5,
+          "medium_risk": 1,
+          "low_risk": 0
+        }
+      }
+    }
+  ]
+}

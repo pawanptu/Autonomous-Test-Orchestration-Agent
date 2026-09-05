@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomous-test-orchestration-agent"
+version = "1.0.0"
+description = "An autonomous agent that plans, generates, executes, heals and reports web tests from a URL alone."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Autonomous Test Orchestration Agent" }]
+keywords = ["testing", "agent", "langgraph", "playwright", "qa", "llm"]
+
+dependencies = [
+  "langgraph~=0.6.7",
+  "langchain-core~=0.3.75",
+  "playwright~=1.55.0",
+  "httpx~=0.28.1",
+  "pydantic~=2.11.7",
+  "fastapi~=0.116.1",
+  "uvicorn[standard]~=0.35.0",
+  "python-multipart~=0.0.20",
+  "streamlit~=1.49.1",
+  "requests~=2.32.4",
+  "pillow~=11.3.0",
+  "python-dotenv~=1.1.1",
+]
+
+[project.optional-dependencies]
+prd = ["chromadb~=1.0.20"]
+dev = ["pytest~=8.4.1", "pytest-asyncio~=1.1.0"]
+
+[project.scripts]
+ato-run = "cli:main"
+
+[tool.setuptools]
+py-modules = ["config", "security", "logging_setup", "cli"]
+
+[tool.setuptools.packages.find]
+include = ["agents*", "api*", "browser*", "differentiation*", "graph*", "llm*", "reports*"]
+exclude = ["tests*", "ui*"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-q --strict-markers"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501", "B008"]

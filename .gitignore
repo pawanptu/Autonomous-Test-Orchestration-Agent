@@ -1,0 +1,59 @@
+# --- Secrets: never commit -------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+storage_state*.json
+auth_state*.json
+
+# --- Run artifacts ---------------------------------------------------------
+# Generated tests, screenshots, events and reports are per-run outputs.
+reports/runs/*
+!reports/runs/.gitkeep
+# Visual baselines are intentionally NOT ignored: they are the reference
+# images a regression is measured against and are meant to be reviewed.
+# Uncomment the next two lines if you would rather keep them local-only.
+# reports/baselines/*
+# !reports/baselines/.gitkeep
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+.venv*/
+venv/
+env/
+.python-version
+
+# --- Tooling ---------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.streamlit/secrets.toml
+
+# --- Playwright ------------------------------------------------------------
+playwright-report/
+test-results/
+.playwright/
+
+# --- Local run logs (server stdout redirected during manual testing) ------
+/*.log
+
+# --- Editors / OS ----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+.pytest_cache/
