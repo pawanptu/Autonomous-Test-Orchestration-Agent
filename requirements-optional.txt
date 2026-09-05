@@ -1,0 +1,8 @@
+# Optional extras. The core pipeline does not need any of these.
+#
+#   pip install -r requirements-optional.txt
+#
+# ChromaDB powers ENABLE_PRD_GAP_ANALYSIS (local / in-memory client only, no
+# hosted service, no paid API). Without it, differentiation/prd_gap.py falls
+# back to a deterministic keyword-overlap matcher and says so in the report.
+chromadb~=1.0.20

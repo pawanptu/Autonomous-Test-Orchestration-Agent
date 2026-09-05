@@ -1,0 +1,53 @@
+01:24:57 INFO    aivor.api              API ready on 127.0.0.1:8000 (llm_configured=True, offline=False)
+INFO:     127.0.0.1:63208 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62594 - "GET /runs?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55067 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55067 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60489 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60489 - "GET /openapi.json HTTP/1.1" 200 OK
+01:27:27 INFO    aivor.store            run run_2819d9226017 registered (credentials_present=False)
+INFO:     127.0.0.1:64598 - "POST /run HTTP/1.1" 202 Accepted
+01:27:27 INFO    aivor.runtime          [orchestrator] start Run started against https://books.toscrape.com/
+INFO:     127.0.0.1:64599 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:28 INFO    aivor.session          browser launched (headless=True, viewport=1280x900)
+01:27:29 INFO    aivor.runtime          [planner] start planner started
+INFO:     127.0.0.1:58194 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51847 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51849 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51751 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:35 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/ (73 links, 10 forms, depth 0)
+INFO:     127.0.0.1:51753 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:36 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/index.html (73 links, 10 forms, depth 1)
+INFO:     127.0.0.1:56701 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:37 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books_1/index.html (73 links, 10 forms, depth 1)
+INFO:     127.0.0.1:57437 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:39 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/travel_2/index.html (63 links, 10 forms, depth 1)
+01:27:40 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/mystery_3/index.html (73 links, 10 forms, depth 1)
+INFO:     127.0.0.1:57440 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:41 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html (73 links, 10 forms, depth 1)
+INFO:     127.0.0.1:57441 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:42 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html (73 links, 10 forms, depth 1)
+01:27:43 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/classics_6/index.html (71 links, 10 forms, depth 1)
+INFO:     127.0.0.1:53597 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:44 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html (63 links, 10 forms, depth 1)
+INFO:     127.0.0.1:60195 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:45 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/romance_8/index.html (73 links, 10 forms, depth 1)
+01:27:46 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html (69 links, 10 forms, depth 1)
+INFO:     127.0.0.1:60198 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:47 INFO    aivor.runtime          [planner] progress Crawled https://books.toscrape.com/catalogue/category/books/fiction_10/index.html (73 links, 10 forms, depth 1)
+01:27:47 INFO    aivor.runtime          [planner] progress Crawl complete: 12 page(s), login_detected=False, ecommerce_signals=3
+01:27:47 ERROR   aivor.graph            node planner failed: groq rejected the API key (HTTP 401). Check GROQ_API_KEY.
+01:27:47 ERROR   aivor.runtime          [planner] error planner failed: LLMAuthError: groq rejected the API key (HTTP 401). Check GROQ_API_KEY.
+01:27:47 INFO    aivor.runtime          [report] start report started
+01:27:47 INFO    aivor.runtime          [report] progress Synthesising the final risk-ranked report
+01:27:47 INFO    aivor.runtime          [report] complete report complete
+INFO:     127.0.0.1:60201 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+01:27:48 WARNING aivor.orchestrator     report synthesis failed, using the deterministic summary: groq rejected the API key (HTTP 401). Check GROQ_API_KEY.
+01:27:48 ERROR   aivor.runtime          [report] error Executive summary model call failed - using the computed summary
+01:27:48 INFO    aivor.runtime          [report] complete Report ready: 0 passed, 0 failed, 0 bug(s) filed, 0 queued for review
+01:27:48 INFO    aivor.orchestrator     run run_2819d9226017 finished in 21.0s
+INFO:     127.0.0.1:60203 - "GET /run/run_2819d9226017/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60204 - "GET /run/run_2819d9226017/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60205 - "GET /run/run_2819d9226017/report.md HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60206 - "GET /run/run_2819d9226017/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60207 - "GET /run/run_2819d9226017/events.jsonl HTTP/1.1" 200 OK

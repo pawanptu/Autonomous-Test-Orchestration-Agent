@@ -1,0 +1,45 @@
+# Autonomous Test Orchestration Agent - runtime dependencies.
+# Python 3.11+ required (3.11 or 3.12 recommended; Playwright wheels lag on 3.13+).
+#
+# Pins use compatible-release (~=) so a fresh `pip install -r requirements.txt`
+# resolves reproducibly while still picking up patch fixes.
+
+# --- Agent graph -----------------------------------------------------------
+langgraph~=0.6.7
+langgraph-checkpoint~=2.1.1
+langchain-core~=0.3.75
+
+# --- Browser automation ----------------------------------------------------
+playwright~=1.55.0
+
+# --- LLM transport (OpenAI-compatible: Groq today, Gemini free tier optional)
+httpx~=0.28.1
+
+# --- Typed models ----------------------------------------------------------
+pydantic~=2.11.7
+
+# --- API -------------------------------------------------------------------
+fastapi~=0.116.1
+uvicorn[standard]~=0.35.0
+python-multipart~=0.0.20
+
+# --- UI --------------------------------------------------------------------
+streamlit~=1.49.1
+requests~=2.32.4
+
+# --- Visual regression -----------------------------------------------------
+pillow~=11.3.0
+
+# --- Config ----------------------------------------------------------------
+python-dotenv~=1.1.1
+
+# --- Optional: PRD gap analysis (ENABLE_PRD_GAP_ANALYSIS=true) -------------
+# ChromaDB is deliberately NOT installed by default: it is a large dependency
+# (onnxruntime, tokenizers) and the core pipeline must run without it. Install
+# it only if you want the PRD gap-analysis feature:
+#     pip install -r requirements-optional.txt
+# The importing module degrades to a keyword-overlap fallback when it is absent.
+
+# --- Tests -----------------------------------------------------------------
+pytest~=8.4.1
+pytest-asyncio~=1.1.0
