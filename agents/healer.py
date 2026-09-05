@@ -13,7 +13,7 @@ How the decision is made
    now, against the page as it currently is. "Is the selector still there?" is
    the single strongest signal available and it cannot be answered from logs.
 
-2. **Two confidences, blended.** The 70B model classifies and self-reports a
+2. **Two confidences, blended.** The reasoning model classifies and self-reports a
    confidence. Separately, :mod:`differentiation.confidence_scorer` computes a
    confidence from the gathered signals using the same published rubric. The
    two are blended, which caps how far a persuasive-sounding rationale can move

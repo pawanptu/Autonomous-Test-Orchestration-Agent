@@ -12,7 +12,7 @@ three passes:
 
 2. **Model authoring.** The small, fast model writes the test body from the
    flow plus the resolved locators. Judgment already happened upstream; this is
-   mechanical translation, so it must never burn the 70B.
+   mechanical translation, so it must never burn the larger reasoning model.
 
 3. **Gate and fall back.** The output is AST-audited
    (:mod:`browser.sandbox`), scanned for credential literals, and checked for

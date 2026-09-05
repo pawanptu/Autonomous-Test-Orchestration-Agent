@@ -419,11 +419,11 @@ convenience:
 
 | Role | Model | Used for |
 |---|---|---|
-| **Reasoning** | `llama-3.3-70b-versatile` | Coverage evaluation, risk ranking, defect classification, confidence, orchestrator routing, report synthesis |
-| **Codegen** | `llama-3.1-8b-instant` | Plan → Playwright translation, ticket prose |
+| **Reasoning** | `openai/gpt-oss-120b` | Coverage evaluation, risk ranking, defect classification, confidence, orchestrator routing, report synthesis |
+| **Codegen** | `openai/gpt-oss-20b` | Plan → Playwright translation, ticket prose |
 
-`openai/gpt-oss-20b` is a drop-in alternative for codegen via `MODEL_CODEGEN`.
-**Never route codegen to the 70B** — it is mechanical translation, and burning
+`qwen/qwen3.6-27b` is a drop-in alternative for reasoning via `MODEL_REASONING`.
+**Never route codegen to the larger reasoning model** — it is mechanical translation, and burning
 the reasoning budget on it is what makes a demo die halfway through.
 
 Handling:
@@ -523,7 +523,7 @@ works, but the full version is not built.
 
 8. **The AST sandbox is defence in depth, not a security boundary.**
 
-9. **The 8B model writes weaker tests than the 70B would.** That is a deliberate
+9. **The smaller codegen model writes weaker tests than the reasoning model would.** That is a deliberate
    rate-limit trade. The deterministic compiler catches the worst of it, and the
    report records which path produced each file.
 

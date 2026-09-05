@@ -7,9 +7,9 @@ Design
 provider is answering. That is what makes the fallback seam real: adding the
 Gemini free tier is a provider registration, not a change to any caller.
 
-*Rate-limit awareness.* Groq's free tier is generous but finite. The 70B
-reasoning model is gated behind a per-role minimum interval and the mechanical
-plan-to-code work is routed to the 8B model. Every 429 is retried with
+*Rate-limit awareness.* Groq's rate limits are finite. The larger reasoning
+model is gated behind a per-role minimum interval and the mechanical
+plan-to-code work is routed to the smaller model. Every 429 is retried with
 exponential backoff plus jitter, honouring ``Retry-After`` when present.
 
 *One JSON repair.* :meth:`LLMClient.complete_json` parses defensively, and on
@@ -54,7 +54,7 @@ class ModelRole(str, Enum):
 
     CODEGEN = "codegen"
     """Mechanical translation: plan steps to Playwright calls, ticket prose.
-    Small, fast, cheap model. Never the 70B."""
+    Small, fast, cheap model. Never the larger reasoning model."""
 
 
 class LLMError(RuntimeError):

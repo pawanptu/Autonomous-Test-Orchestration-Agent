@@ -37,14 +37,16 @@ GENERATED_TESTS_DIRNAME: Final[str] = "generated_tests"
 # --------------------------------------------------------------------------
 # Model routing.
 #
-# Rate-limit awareness is a hard requirement: the 70B model is reserved for
+# Rate-limit awareness is a hard requirement: the larger reasoning model is reserved for
 # judgment (coverage evaluation, risk ranking, defect classification,
 # confidence scoring, orchestrator routing) and the small model does the
-# mechanical plan-to-code translation. Never burn 70B on codegen.
+# mechanical plan-to-code translation. Never burn the larger model on codegen.
 # --------------------------------------------------------------------------
-MODEL_REASONING: Final[str] = "llama-3.3-70b-versatile"
-MODEL_CODEGEN: Final[str] = "llama-3.1-8b-instant"
-MODEL_CODEGEN_ALT: Final[str] = "openai/gpt-oss-20b"
+# Groq retired the Llama 3.3 70B and Llama 3.1 8B public/developer-plan
+# endpoints on 2026-08-16.  Keep the default route on their direct successors.
+MODEL_REASONING: Final[str] = "openai/gpt-oss-120b"
+MODEL_CODEGEN: Final[str] = "openai/gpt-oss-20b"
+MODEL_CODEGEN_ALT: Final[str] = "qwen/qwen3.6-27b"
 
 GROQ_BASE_URL: Final[str] = "https://api.groq.com/openai/v1"
 

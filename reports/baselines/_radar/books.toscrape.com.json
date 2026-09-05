@@ -1,7 +1,7 @@
 {
   "version": 1,
   "target": "https://books.toscrape.com/",
-  "updated_at": "2026-09-05T01:27:47.571999+00:00",
+  "updated_at": "2026-09-05T07:02:51.368834+00:00",
   "runs": [
     {
       "run_id": "run_13354f22ecd4",
@@ -97,6 +97,163 @@
           "not_run": 0,
           "high_risk": 0,
           "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_53322d7cc574",
+      "ts": "2026-09-05T04:11:35.672052+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_3da7dd114392",
+      "ts": "2026-09-05T04:21:41.097049+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_7ea8516d0cb4",
+      "ts": "2026-09-05T06:06:22.366536+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_49891231a7ef",
+      "ts": "2026-09-05T06:23:37.571673+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_63e03725e914",
+      "ts": "2026-09-05T06:26:01.276454+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {},
+        "counts": {
+          "flows": 0,
+          "passed": 0,
+          "failed": 0,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 0,
+          "medium_risk": 0,
+          "low_risk": 0
+        }
+      }
+    },
+    {
+      "run_id": "run_d25d7502e859",
+      "ts": "2026-09-05T07:02:51.368834+00:00",
+      "target": "https://books.toscrape.com/",
+      "snapshot": {
+        "flows": {
+          "F001": {
+            "name": "Add a book to the basket from a category page",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F002": {
+            "name": "Attempt to add a book with empty quantity",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F003": {
+            "name": "Visit a non‑existent page",
+            "category": "error_state",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F004": {
+            "name": "View basket contents after adding a book",
+            "category": "happy_path",
+            "risk": "medium",
+            "status": "passed"
+          },
+          "F005": {
+            "name": "Remove a book from the basket",
+            "category": "edge_case",
+            "risk": "medium",
+            "status": "failed"
+          },
+          "F006": {
+            "name": "Attempt checkout with an empty basket",
+            "category": "error_state",
+            "risk": "high",
+            "status": "failed"
+          }
+        },
+        "counts": {
+          "flows": 6,
+          "passed": 1,
+          "failed": 5,
+          "error": 0,
+          "skipped": 0,
+          "healed": 0,
+          "not_run": 0,
+          "high_risk": 1,
+          "medium_risk": 5,
           "low_risk": 0
         }
       }
